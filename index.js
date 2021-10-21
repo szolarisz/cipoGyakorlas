@@ -4,9 +4,10 @@ const fs = require('fs');
 const port = 4444;
 
 const server = http.createServer((req, res) => {
-    console.log(req.url);
-    console.log(req.method);
-
+    /*
+        console.log(req.url);
+        console.log(req.method);
+    */
     switch (true) {
         case req.url === "/" && req.method === "GET":
             fs.readFile("./views/index.html", (err, file) => {

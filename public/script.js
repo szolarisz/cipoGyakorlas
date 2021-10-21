@@ -15,7 +15,6 @@ async function feltolt() {
         cipo2HTML += `<a href="${egyCipo.honlap}" class="btn btn-primary">A gyártó honlapja</a>`;
         cipo2HTML += `</div></div>`;
     }
-    console.log(cipo2HTML);
     document.getElementById('cipok').innerHTML = cipo2HTML;
 }
 
