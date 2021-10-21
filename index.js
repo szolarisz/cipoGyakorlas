@@ -48,7 +48,7 @@ const server = http.createServer((req, res) => {
             break;
         case req.url === "/script.js" && req.method === "GET":
             fs.readFile('./public/script.js', (err, file) => {
-                res.setHeader('Content-Type', 'application/js');
+                res.setHeader('Content-Type', 'text/javascript;charset=UTF-8');
                 res.writeHead(200);
                 res.end(file);
             });
